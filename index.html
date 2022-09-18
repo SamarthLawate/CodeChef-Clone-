@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="script.js">
+    <title>Competitive Programming | Participate & Learn | CodeChef</title>
+</head>
+
+<body>
+    <div class="header-content">
+        <header class="cc-header">
+            <div class="cc-logo"><img src="cc-logo.svg" alt=""></div>
+            <i class="i-premium-icon"></i>
+            <div class="text-upgrade">Upgrade to Pro</div>
+            <hr class="m-divider--vertical">
+            <div class="login-signup">
+                <button class="login">Login</button>
+                <button class="sign-up">Sign Up</button>
+            </div>
+        </header>
+        <div class="row-tags">
+            <div class="navs">Home</div>
+            <div class="navs">Practice</div>
+            <div class="navs">Compete</div>
+            <div class="navs">Learn</div>
+            <hr class="m-divider--vertical2">
+        </div>
+        <div class="row-tags1">
+            <div class="navs">Discuss</div>
+            <div class="navs">Associate with Us</div>
+            <div class="navs">More from CodeChef</div>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="2.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+                <div class="info1  ">
+                    <h2>Practice Like a Pro</h2>
+                    <p>Practice everyday snd top the leaderboard!</p>
+                    <hr class="m-image-with-text__divider">
+                </div>
+                <div class="action1">Know More</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="1.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+                <div class="info2">
+                    <h2>Expolre opportunities</h2>
+                    <p>Zethic is looking to hire Laravel Developers with 1-2 years of experience from the CodeChef community.</p>
+                    <hr class="m-image-with-text__divider">
+                    <div class="action2">Apply Know</div>
+                </div>
+                
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="3.jpg" style="width:100%">
+                <div class="info2">
+                    <h2>Starters 55</h2>
+                    <p>The beginer lavel coding contest.</p>
+                    <hr class="m-image-with-text__divider">
+                    <div class="action2">Set Reminder</div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="4.jpg" style="width:100%">
+                <div class="info2">
+                    <h2>CodeChef Pro</h2>
+                    <p>Get a new and enhance feature in 999 only.</p>
+                    <hr class="m-image-with-text__divider">
+                    <div class="action2">Know More</div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="5.jpg" style="width:100%">
+                <div class="info2">
+                    <h2>Learning Camps</h2>
+                    <p>Its time to level up.Register for Learning camp.</p>
+                    <hr class="m-image-with-text__divider">
+                    <div class="action2">Register Now</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="dots" style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <script>
+
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 4000); // Change image every 2 seconds
+            }
+
+
+        </script>
+</body>
+
+</html>
